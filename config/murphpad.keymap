@@ -17,8 +17,8 @@
     status = "okay";
 };
 
-&top_right_encoder {
-    status = "disabled";
+sensors: sensors {
+    sensors = <&middle_left_encoder>;
 };
 
 &kscan {
@@ -97,7 +97,6 @@
                             &kp F4       &kp F5          &kp F6
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
-
         };
     };
 };

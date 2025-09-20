@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "murphpad-layout.dtsi"
+#include "kazu07-layout.dtsi"
 
 / {
     chosen {

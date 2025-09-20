@@ -16,10 +16,6 @@
     status = "okay";
 };
 
-&top_right_encoder {
-    status = "okay";
-};
-
 / {
     // combos {
     //     compatible = "zmk,combos";
@@ -53,6 +49,12 @@
             bindings = <
                             &kp F1       &kp F2          &kp F3            &kp KP_ENTER
                             &kp F4       &kp F5          &kp F6            &kp trans
+                            &trans       &trans          &trans            &trans
+                &trans      &trans       &trans          &trans            &trans
+                &trans      &trans       &trans          &trans            &trans
+                &trans      &trans       &trans          &trans            &trans
+
+                            &trans           &trans           &trans
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 

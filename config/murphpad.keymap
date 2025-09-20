@@ -19,7 +19,7 @@
             physical-layout = <&all_1u_layout>;
             positions
                 = <11 11 12 13>
-                , <21 22 13>
+                , <21 22 23>
                 ;
         };
 };

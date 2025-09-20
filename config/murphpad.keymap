@@ -49,12 +49,6 @@
             bindings = <
                             &kp F1       &kp F2          &kp F3            &kp KP_ENTER
                             &kp F4       &kp F5          &kp F6            &trans
-                            &trans       &trans          &trans            &trans
-                &trans      &trans       &trans          &trans            &trans
-                &trans      &trans       &trans          &trans            &trans
-                &trans      &trans       &trans          &trans            &trans
-
-                            &trans           &trans           &trans
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 

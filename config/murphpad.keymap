@@ -20,6 +20,19 @@
     status = "disabled";
 };
 
+&kscan {
+    row-gpios
+        = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+    col-gpios
+        = <&pro_micro 9  GPIO_ACTIVE_HIGH>
+        , <&pro_micro 6  GPIO_ACTIVE_HIGH>
+        , <&pro_micro 5  GPIO_ACTIVE_HIGH>
+        , <&pro_micro 4  GPIO_ACTIVE_HIGH>
+        ;
+};
+    
 /* Minimal override of all_1u_transform to match latest overlay */
 &all_1u_transform {
     columns = <4>;

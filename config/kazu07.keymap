@@ -42,7 +42,6 @@
     //         bindings = <&bt BT_NXT>;
     //     };
     // };
-
     keymap: keymap {
         compatible = "zmk,keymap";
 

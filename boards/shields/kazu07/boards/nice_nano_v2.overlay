@@ -14,21 +14,21 @@
         };
     };
 
-    // /* configuration for i2c0 device, default state */
-    // i2c0_default: i2c0_default {
-    //     group1 {
-    //         psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
-    //             <NRF_PSEL(TWIM_SCL, 0, 20)>;
-    //     };
-    // };
+    /* configuration for i2c0 device, default state */
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
+                <NRF_PSEL(TWIM_SCL, 0, 20)>;
+        };
+    };
 
-    // i2c0_sleep: i2c0_sleep {
-    //     group1 {
-    //         psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
-    //             <NRF_PSEL(TWIM_SCL, 0, 20)>;
-    //         low-power-enable;
-    //     };
-    // };
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
+                <NRF_PSEL(TWIM_SCL, 0, 20)>;
+            low-power-enable;
+        };
+    };
 
 };
 
@@ -57,16 +57,16 @@
 
 };
 
-// &i2c0 {
-//     compatible = "nordic,nrf-twim"; // I2C controller instead of generic
-//     status = "okay";
-//     pinctrl-0 = <&i2c0_default>;
-//     pinctrl-1 = <&i2c0_sleep>;
-//     pinctrl-names = "default", "sleep";
-//     clock-frequency = <I2C_BITRATE_FAST>;
+&i2c0 {
+    compatible = "nordic,nrf-twim"; // I2C controller instead of generic
+    status = "okay";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+    clock-frequency = <I2C_BITRATE_FAST>;
 
-//     /* Nodes using the bus go here */
-// };
+    /* Nodes using the bus go here */
+};
 
 / {
     chosen {

@@ -14,10 +14,17 @@
 
 #define TIMEOUT 300
 
-&middle_left_encoder {
+&roller_encoder {
     status = "okay";
 };
 
+&right_knob {
+    status = "okay";
+};
+
+&left_knob {
+    status = "okay";
+};
 / {
     // combos {
     //     compatible = "zmk,combos";
@@ -52,7 +59,7 @@
                             &kp F1       &kp F2          &kp F3            &kp KP_ENTER
                             &kp F4       &kp F5          &kp F6
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp RGB_BRI RGB_BRD &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
